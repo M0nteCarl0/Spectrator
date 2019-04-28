@@ -1,6 +1,6 @@
 # Spectrator
-[![contributors: count](https://img.shields.io/badge/contributors-welcome-brightgreen.svg?style=social)](https://github.com/M0nteCarl0/OpenComunicationModule)
-
+[![contributors: count](https://img.shields.io/badge/contributors-welcome-brightgreen.svg?style=social)](https://github.com/M0nteCarl0/Spectrator)
+![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/M0nteCarl0/Spectrator?svg=true&retina=true)
 ![GitHub forks](https://img.shields.io/github/forks/M0nteCarl0/Spectrator.svg?label=Fork&style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/M0nteCarl0/Spectrator.svg?label=watch&style=social)
 
