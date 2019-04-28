@@ -1,0 +1,100 @@
+﻿Построение начато 28.04.2019 11:17:05.
+     1>Проект "D:\GitHubAndGitlab\spectrator\0.1\Win32\Source\Spectrator\Spectrator.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "x64\Release\Spectrator.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /D WIN32 /D NDEBUG /D _MBCS /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"x64\Release\Spectrator.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /errorReport:prompt stdafx.cpp /clr:nostdlib 
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /D WIN32 /D NDEBUG /D _MBCS /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /errorReport:prompt AssemblyInfo.cpp CPUInformation.cpp Spectrator.cpp SpeculationControl.cpp WindowsSpeculationControl.cpp /clr:nostdlib 
+         AssemblyInfo.cpp
+         CPUInformation.cpp
+     1>CPUInformation.cpp(372): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+         Spectrator.cpp
+         SpeculationControl.cpp
+     1>SpeculationControl.cpp(5): warning C4800: BOOL: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>SpeculationControl.cpp(29): warning C4293: <<: отрицательное или слишком большое смещение; поведение не определено
+         WindowsSpeculationControl.cpp
+     1>WindowsSpeculationControl.cpp(7): warning C4101: State: неиспользованная локальная переменная
+         Generating Code...
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\speculationcontrol.cpp(53): warning C4793: SpeculationControl::ApplyPerPackageSpeculationControl: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\speculationcontrol.cpp(55): warning C4793: SpeculationControl::ApplyPerPackageSpeculationControl: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\speculationcontrol.cpp(64): warning C4793: SpeculationControl::GetSpeculationCapabylities: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\speculationcontrol.cpp(66): warning C4793: SpeculationControl::GetSpeculationCapabylities: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\speculationcontrol.cpp(76): warning C4793: SpeculationControl::GetSpeculationControlSettings: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\speculationcontrol.cpp(80): warning C4793: SpeculationControl::GetSpeculationControlSettings: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\speculationcontrol.cpp(82): warning C4793: SpeculationControl::GetSpeculationControlSettings: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\speculationcontrol.cpp(126): warning C4793: SpeculationControl::ApplyPerPackagePredictionControl: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\speculationcontrol.cpp(152): warning C4793: SpeculationControl::ApplyPerPackageFlushCachesControl: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(90): warning C4793: CPUInformation::GetLargestExtendedFunctionSupported: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(98): warning C4793: CPUInformation::GetExtendedProcessorSignature: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(202): warning C4793: CPUInformation::EnumerateLogicalCores: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(208): warning C4793: CPUInformation::EnumerateLogicalCores: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(222): warning C4793: CPUInformation::EnumeratePhysicalCores: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(229): warning C4793: CPUInformation::EnumeratePhysicalCores: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(268): warning C4793: CPUInformation::CPUIDisAvalible: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(271): warning C4793: CPUInformation::CPUIDisAvalible: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(272): warning C4793: CPUInformation::CPUIDisAvalible: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(33): warning C4793: CPUInformation::GetFeatureInformation: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(52): warning C4793: CPUInformation::GetExtendedFeatures: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(105): warning C4793: CPUInformation::GetBrandString1: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(106): warning C4793: CPUInformation::GetBrandString1: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(115): warning C4793: CPUInformation::GetBrandString2: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(363): warning C4715: CPUInformation::GetCacheNumberAPIC: значение возвращается не при всех путях выполнения
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(123): warning C4793: CPUInformation::GetBrandString3: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(61): warning C4793: CPUInformation::GetVendorName: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(152): warning C4793: CPUInformation::EnumerateCaches: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>d:\githubandgitlab\spectrator\0.1\win32\source\spectrator\cpuinformation.cpp(157): warning C4793: CPUInformation::EnumerateCaches: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /clr /nologo /W3 /WX- /Od /D WIN32 /D NDEBUG /D _MBCS /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /TP /errorReport:prompt "C:\Users\harde\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       CoreResGen:
+         Не удалось прочесть файл состояния "x64\Release\Spectrator.vcxproj.GenerateResource.Cache". Недопустимый формат файла состояния.
+         Отсутствуют ресурсы, устаревшие по отношению к файлам своих источников. Пропуск формирования ресурсов.
+       ResourceCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHubAndGitlab\spectrator\0.1\Win32\Source\x64\Release\Spectrator.exe" /INCREMENTAL:NO /NOLOGO WinRing0x64.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:x64\Release\Spectrator.MainView.resources /MANIFEST /ManifestFile:"x64\Release\Spectrator.exe.intermediate.manifest" /MANIFESTUAC:"level='requireAdministrator' uiAccess='false'" /DEBUG /PDB:"D:\GitHubAndGitlab\spectrator\0.1\Win32\Source\x64\Release\Spectrator.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 x64\Release\app.res
+         x64\Release\AssemblyInfo.obj
+         x64\Release\CPUInformation.obj
+         x64\Release\Spectrator.obj
+         x64\Release\SpeculationControl.obj
+         x64\Release\stdafx.obj
+         x64\Release\WindowsSpeculationControl.obj
+         "x64\Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Spectrator.vcxproj -> D:\GitHubAndGitlab\spectrator\0.1\Win32\Source\x64\Release\Spectrator.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\GitHubAndGitlab\spectrator\0.1\Win32\Source\x64\Release\Spectrator.exe;#1" /manifest x64\Release\Spectrator.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "x64\Release\Spectrator.unsuccessfulbuild" удаляется.
+         Обращение к "x64\Release\Spectrator.lastbuildstate".
+     1>Построение проекта "D:\GitHubAndGitlab\spectrator\0.1\Win32\Source\Spectrator\Spectrator.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:08.97

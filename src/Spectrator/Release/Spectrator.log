@@ -1,0 +1,84 @@
+﻿Сборка начата 13.10.2018 21:30:38.
+     1>Проект "C:\Users\harde\Documents\Visual Studio 2010\Projects\Spectrator\Spectrator\Spectrator.vcxproj" в узле 2 (целевые объекты Build).
+     1>ResolveAssemblyReferences:
+         Не удалось прочесть файл состояния "Release\Spectrator.vcxprojResolveAssemblyReference.cache". Недопустимый формат файла состояния.
+       InitializeBuildStatus:
+         Создание "Release\Spectrator.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _MBCS /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\Spectrator.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt stdafx.cpp /clr:nostdlib 
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _MBCS /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt AssemblyInfo.cpp CPUInformation.cpp Spectrator.cpp SpeculationControl.cpp /clr:nostdlib 
+         AssemblyInfo.cpp
+         CPUInformation.cpp
+     1>CPUInformation.cpp(263): warning C4244: аргумент: преобразование "unsigned __int64" в "unsigned int", возможна потеря данных
+         Spectrator.cpp
+         SpeculationControl.cpp
+     1>SpeculationControl.cpp(5): warning C4800: BOOL: принудительно задано логическое значение "true" или "false" (предупреждение о производительности)
+     1>SpeculationControl.cpp(23): warning C4293: <<: отрицательное или слишком большое смещение; поведение не определено
+         Создание кода...
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(88): warning C4793: CPUInformation::GetLargestExtendedFunctionSupported: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(96): warning C4793: CPUInformation::GetExtendedProcessorSignature: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(200): warning C4793: CPUInformation::EnumerateLogicalCores: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(206): warning C4793: CPUInformation::EnumerateLogicalCores: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(220): warning C4793: CPUInformation::EnumeratePhysicalCores: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(227): warning C4793: CPUInformation::EnumeratePhysicalCores: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(260): warning C4793: CPUInformation::CPUIDisAvalible: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(263): warning C4793: CPUInformation::CPUIDisAvalible: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(264): warning C4793: CPUInformation::CPUIDisAvalible: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(31): warning C4793: CPUInformation::GetFeatureInformation: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(50): warning C4793: CPUInformation::GetExtendedFeatures: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(103): warning C4793: CPUInformation::GetBrandString1: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(104): warning C4793: CPUInformation::GetBrandString1: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(113): warning C4793: CPUInformation::GetBrandString2: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(355): warning C4715: CPUInformation::GetCacheNumberAPIC: значение возвращается не при всех путях выполнения
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(121): warning C4793: CPUInformation::GetBrandString3: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(59): warning C4793: CPUInformation::GetVendorName: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(150): warning C4793: CPUInformation::EnumerateCaches: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+     1>c:\users\harde\documents\visual studio 2010\projects\spectrator\spectrator\cpuinformation.cpp(155): warning C4793: CPUInformation::EnumerateCaches: функция скомпилирована как машинная:
+         	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
+         Для всех выходных данных обновления не требуется.
+       CoreResGen:
+         Не удалось прочесть файл состояния "Release\Spectrator.vcxproj.GenerateResource.Cache". Недопустимый формат файла состояния.
+         "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile MainView.resX,Release\Spectrator.MainView.resources
+         Обрабатывается файл ресурсов "MainView.resX", результирующий объект: "Release\Spectrator.MainView.resources".
+       ResourceCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\harde\Documents\Visual Studio 2010\Projects\Spectrator\Release\Spectrator.exe" /INCREMENTAL:NO /NOLOGO WinRing0.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Release\Spectrator.MainView.resources /MANIFEST /ManifestFile:"Release\Spectrator.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\harde\Documents\Visual Studio 2010\Projects\Spectrator\Release\Spectrator.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         Release\AssemblyInfo.obj
+         Release\CPUInformation.obj
+         Release\Spectrator.obj
+         Release\SpeculationControl.obj
+         Release\stdafx.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Spectrator.vcxproj -> C:\Users\harde\Documents\Visual Studio 2010\Projects\Spectrator\Release\Spectrator.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\harde\Documents\Visual Studio 2010\Projects\Spectrator\Release\Spectrator.exe;#1" /manifest Release\Spectrator.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Release\Spectrator.unsuccessfulbuild" удаляется.
+         Обращение к "Release\Spectrator.lastbuildstate".
+     1>Сборка проекта "C:\Users\harde\Documents\Visual Studio 2010\Projects\Spectrator\Spectrator\Spectrator.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:03.26
