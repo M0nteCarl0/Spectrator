@@ -8,9 +8,14 @@ When active Windows Spectre Protection write in MSR IA32_SPEC_CTRL incorect!
 
 Features:
 
-*Read/Write IA32_SPEC_CTRL MSR for CPU package.
-*Write IA32_PRED_CMD MSR for CPU package.
-*Write IA32_FLUSH_CMD for CPU package.
-*Show Windows security status.
-*Show CPU uCode version
+Read/Write IA32_SPEC_CTRL MSR for CPU package.
+
+Write IA32_PRED_CMD MSR for CPU package.
+
+Write IA32_FLUSH_CMD for CPU package.
+
+Show Windows security status.
+
+Show CPU uCode version
+
 
