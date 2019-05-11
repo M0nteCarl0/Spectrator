@@ -1,10 +1,13 @@
-#pragma once
 #include <Windows.h>
 #include <winternl.h>
+#ifndef _WINDOWS_SPECULATION_CONTROL_
+#define _WINDOWS_SPECULATION_CONTROL_
+
 #define STATUS_SUCCESS 0x00000000
 #define STATUS_UNSUCCESSFUL 0xC0000001
 #define SystemSpeculationControlInformation (SYSTEM_INFORMATION_CLASS)201
 #define SystemKernelVaShadowInformation (SYSTEM_INFORMATION_CLASS)196
+
 typedef NTSTATUS(NTAPI *pNtQuerySystemInformation)(
     SYSTEM_INFORMATION_CLASS SystemInformationClass, PVOID SystemInformation,
     ULONG SystemInformationLength, PULONG ReturnLength OPTIONAL);
@@ -58,15 +61,10 @@ public:
   SYSTEM_SPECULATION_CONTROL_INFORMATION GetSpeculationControlFlags(void);
 
 private:
-  void GetKvaShadowFlags(SYSTEM_KERNEL_VA_SHADOW_INFORMATION *Flags);
-  void
-  GetSpeculationControlFlags(SYSTEM_SPECULATION_CONTROL_INFORMATION *Flags);
-  void SetKvaShadowFlags(SYSTEM_KERNEL_VA_SHADOW_INFORMATION *Flags);
-  void
-  SetSpeculationControlFlags(SYSTEM_SPECULATION_CONTROL_INFORMATION *Flags);
   HINSTANCE hNtDll;
   pNtQuerySystemInformation NtQuerySystemInformation;
   pNtSetSystemInformation NtSetSystemInformation;
   SYSTEM_KERNEL_VA_SHADOW_INFORMATION KvaShadowFlags;
   SYSTEM_SPECULATION_CONTROL_INFORMATION SpeculationControlFlags;
 };
+#endif

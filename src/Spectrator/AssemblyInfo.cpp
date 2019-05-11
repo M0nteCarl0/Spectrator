@@ -1,3 +1,8 @@
+// This is an open source non-commercial project. Dear PVS-Studio, please check
+// it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java:
+// http://www.viva64.com
 #include "stdafx.h"
 
 using namespace System;
@@ -28,8 +33,8 @@ using namespace System::Security::Permissions;
 //      Номер построения
 //      Редакция
 //
-// Можно задать все значения или принять номер построения и номер редакции по умолчанию,
-// используя "*", как показано ниже:
+// Можно задать все значения или принять номер построения и номер редакции по
+// умолчанию, используя "*", как показано ниже:
 
 [assembly:AssemblyVersionAttribute("0.1.*")];
 
@@ -37,4 +42,5 @@ using namespace System::Security::Permissions;
 
 [assembly:CLSCompliantAttribute(true)];
 
-[assembly:SecurityPermission(SecurityAction::RequestMinimum, UnmanagedCode = true)];
+[assembly:SecurityPermission(SecurityAction::RequestMinimum,
+                             UnmanagedCode = true)];

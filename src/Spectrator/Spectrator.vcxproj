@@ -158,6 +158,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CPUInformation.cpp" />
+    <ClCompile Include="MainView.cpp" />
     <ClCompile Include="Spectrator.cpp" />
     <ClCompile Include="SpeculationControl.cpp" />
     <ClCompile Include="stdafx.cpp">

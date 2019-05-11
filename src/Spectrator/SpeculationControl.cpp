@@ -1,13 +1,20 @@
+// This is an open source non-commercial project. Dear PVS-Studio, please check
+// it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java:
+// http://www.viva64.com
 #include "SpeculationControl.h"
 #include <OlsApi.h>
 #include <intrin.h>
 SpeculationControl::SpeculationControl(void) {
   bool Flag = InitializeOls();
+  ProcessorMask = 0;
+  LogicalProcessorCount = 0;
   IA32_SPEC_CTRL = 0;
   IA32_PRED_CMD = 0;
   IA32_ARCH_CAPABILITIES = 0;
   IA32_FLUSH_CMD = 0;
-  // CR4 = __readcr4();
+  CR4 = 0;
   GetSpeculationControlSettings();
   Thread = GetCurrentThread();
 }
@@ -27,8 +34,6 @@ int SpeculationControl::GetMicrocodeVersion(void) {
 void SpeculationControl::SetNumProcessors(size_t NumProcessors) {
   LogicalProcessorCount = NumProcessors;
 }
-
-void SpeculationControl::SetProcessorMask(size_t ProcesorMask) {}
 
 void SpeculationControl::ApplyPerPackageSpeculationControl(void) {
   DWORD H = 0;
@@ -126,5 +131,3 @@ bool SpeculationControl::CheckWritedSpeculationControlSettings(void) {
   }
   return Flag;
 }
-
-void SpeculationControl::ApplyPerLogicalProceesorMask(void) {}

@@ -1,5 +1,6 @@
 ﻿#include <stdint.h>
-
+#ifndef _CPU_DEFINES_
+#define _CPU_DEFINES_
 enum ProcessorFeatureFlags {
 
   ProcessorFeatureFlags_FPU = 0x0,
@@ -35,7 +36,6 @@ enum ProcessorFeatureFlags {
 
 enum ProcessorFeatureFlagsECX {
   ProcessorFeatureFlagsECX_PCID = 0x11,
-
 };
 
 enum ProcessorFeatureFlagsExtended {
@@ -103,13 +103,11 @@ typedef enum CacheType {
   CacheType_Data_Cache = 0x1,
   CacheType_Instruction_Cache = 0x2,
   CacheType_Unifided_Cache = 0x3,
-
 } CacheType;
 
 enum CacheAccesCapabylity {
   CacheAccesCapabylity_Inclusive = 0x0,
   CacheAccesCapabylity_SharedBeetwenThreads = 0x1,
-
 };
 
 enum CPUID_Function {
@@ -125,7 +123,6 @@ enum CPUID_Function {
   CPUID_Function_Architectual_Performance_Monitor = 0xA,
   CPUID_Function_Processor_Topology = 0xB,
   CPUID_Function_XSAVE_Features = 0xD,
-
 };
 
 enum CPUID_SubFunction {
@@ -145,3 +142,4 @@ typedef enum CPUID_CPUVendor {
   CPUID_CPUVendor_Intel = 0x1,
   CPUID_CPUVendor_AMD
 } CPUID_CPUVendor;
+#endif

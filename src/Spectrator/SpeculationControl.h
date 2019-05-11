@@ -1,7 +1,6 @@
-#pragma once
-
 #include <Windows.h>
-
+#ifndef _SPEC_CONTROL_CPU_
+#define _SPEC_CONTROL_CPU_
 enum IA32_SPEC_CTRL_MSR_FLAG {
   IA32_SPEC_CTRL_MSR_FLAG_IBRS = (1 << 0),
   IA32_SPEC_CTRL_MSR_FLAG_STIBP = (1 << 1),
@@ -18,7 +17,6 @@ enum IA32_ARCH_CAPABILITIES_MSR_FLAG {
 
 enum IA32_PRED_CMD_MSR_FLAG {
   IA32_PRED_CMD_MSR_FLAG_IBPB = (0 << 1),
-
 };
 
 enum IA32_FLUSH_CMD_MSR_FLAG {
@@ -38,7 +36,6 @@ public:
   ~SpeculationControl(void);
   int GetMicrocodeVersion(void);
   void SetNumProcessors(size_t NumProcessors);
-  void SetProcessorMask(size_t ProcesorMask);
   void ApplyPerPackageSpeculationControl(void);
   void GetSpeculationCapabylities(void);
   bool
@@ -51,7 +48,6 @@ public:
   void SetStateFlushCaches(IA32_FLUSH_CMD_MSR_FLAG Flag, bool State);
   void ApplyPerPackageFlushCachesControl(void);
   bool CheckWritedSpeculationControlSettings(void);
-  void ApplyPerLogicalProceesorMask(void);
   DWORD GetIA32_SPEC_CTRL(void) { return IA32_SPEC_CTRL; };
   DWORD GetIA32_SPEC_CTRLW(void) { return IA32_SPEC_CTRLW; };
 
@@ -66,3 +62,4 @@ private:
   unsigned long long CR4;
   HANDLE Thread;
 };
+#endif

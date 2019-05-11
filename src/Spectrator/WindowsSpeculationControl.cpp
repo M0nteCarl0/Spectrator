@@ -1,9 +1,16 @@
+// This is an open source non-commercial project. Dear PVS-Studio, please check
+// it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java:
+// http://www.viva64.com
+
 #include "WindowsSpeculationControl.h"
 
 WindowsSpeculationControl::WindowsSpeculationControl(void) {
 
-  NTSTATUS State;
   hNtDll = GetModuleHandle("ntdll.dll");
+  NtQuerySystemInformation = nullptr;
+  NtSetSystemInformation = nullptr;
   if (hNtDll) {
     NtQuerySystemInformation = (pNtQuerySystemInformation)GetProcAddress(
         hNtDll, "NtQuerySystemInformation");
@@ -30,15 +37,3 @@ SYSTEM_SPECULATION_CONTROL_INFORMATION
 WindowsSpeculationControl::GetSpeculationControlFlags(void) {
   return SpeculationControlFlags;
 }
-
-void WindowsSpeculationControl::GetKvaShadowFlags(
-    SYSTEM_KERNEL_VA_SHADOW_INFORMATION *Flags) {}
-
-void WindowsSpeculationControl::GetSpeculationControlFlags(
-    SYSTEM_SPECULATION_CONTROL_INFORMATION *Flags) {}
-
-void WindowsSpeculationControl::SetKvaShadowFlags(
-    SYSTEM_KERNEL_VA_SHADOW_INFORMATION *Flags) {}
-
-void WindowsSpeculationControl::SetSpeculationControlFlags(
-    SYSTEM_SPECULATION_CONTROL_INFORMATION *Flags) {}

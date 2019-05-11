@@ -57,6 +57,9 @@
     <ClCompile Include="WindowsSpeculationControl.cpp">
       <Filter>Файлы исходного кода\WIndowsSpeculationControl</Filter>
     </ClCompile>
+    <ClCompile Include="MainView.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

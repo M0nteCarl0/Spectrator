@@ -1,3 +1,8 @@
+// This is an open source non-commercial project. Dear PVS-Studio, please check
+// it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java:
+// http://www.viva64.com
 #include "CPUInformation.h"
 #include <cstring>
 #include <intrin.h>
@@ -5,7 +10,6 @@
 char TempName[64] = {0};
 
 CPUInformation::CPUInformation(void) {
-
   if (CPUIDisAvalible()) {
     _RawCachesInfo = vector<ProcessorCacheInfoRaw>();
     GetVendorName();
@@ -45,7 +49,6 @@ void CPUInformation::GetVendorName(void) {
   char VendorN[13] = {0};
   __cpuid(_REGS, CPUID_Function_Vendor_Name_and_largest_function);
   FeelInternalRegs();
-
   strncat_s(VendorN, (char *)&_REGS[1], 4);
   strncat_s(VendorN, (char *)&_REGS[3], 4);
   strncat_s(VendorN, (char *)&_REGS[2], 4);
@@ -77,20 +80,21 @@ void CPUInformation::GetExtendedProcessorSignature(void) {
 }
 
 void CPUInformation::GetBrandString1(void) {
+  int RegValue = 0;
   char BrandNameC[16] = {0};
-  __cpuid(_REGS, CPUID_SubFunction_BrandString1);
   __cpuid((int *)BrandNameC, CPUID_SubFunction_BrandString1);
-
   strncat_s(TempName, BrandNameC, 16);
 }
 
 void CPUInformation::GetBrandString2(void) {
+  int RegValue = 0;
   char BrandNameC[16] = {0};
   __cpuid((int *)BrandNameC, CPUID_SubFunction_BrandString2);
   strncat_s(TempName, BrandNameC, 16);
 }
 
 void CPUInformation::GetBrandString3(void) {
+  int RegValue = 0;
   char BrandNameC[16] = {0};
   __cpuid((int *)BrandNameC, CPUID_SubFunction_BrandString3);
   strncat_s(TempName, BrandNameC, 16);
@@ -98,7 +102,6 @@ void CPUInformation::GetBrandString3(void) {
 }
 
 void CPUInformation::FeelBrandName(void) {
-
   if (GetLargestExtendedFunctionSupported() >= CPUID_SubFunction_BrandString3) {
     GetBrandString1();
     GetBrandString2();
@@ -107,7 +110,6 @@ void CPUInformation::FeelBrandName(void) {
 }
 
 void CPUInformation::EnumerateCaches(void) {
-
   int NoMoreCaches = 1;
   int LevelCache = 0;
   do {
@@ -118,10 +120,8 @@ void CPUInformation::EnumerateCaches(void) {
     if (_CPUVendor == CPUID_CPUVendor_AMD) {
       __cpuidex(_REGS, CPUID_SubFunction_AMD_Cache_Parameters, LevelCache);
     }
-
     FeelInternalRegs();
     LevelCache++;
-
   } while (IsLastCacheEnumerated());
 }
 
@@ -137,7 +137,6 @@ bool CPUInformation::IsLastCacheEnumerated(void) {
   } else {
     _RawCachesInfo.push_back(OneUnitInfo);
   };
-
   return Res;
 }
 
@@ -148,11 +147,11 @@ int CPUInformation::GetPhysicalCPUCount(void) { return _PhysicalCoresCount; }
 void CPUInformation::EnumerateLogicalCores(void) {
   _LogicalCoresCount = 0;
   if (_CPUVendor == CPUID_CPUVendor_Intel) {
-
     __cpuidex(_REGS, CPUID_Function_Processor_Topology, 1);
     FeelInternalRegs();
     _LogicalCoresCount = _EBX;
   }
+
   if (_CPUVendor == CPUID_CPUVendor_AMD) {
     __cpuid(_REGS, CPUID_Function_Feature_Information); // EAX: 0x1
     FeelInternalRegs();
@@ -163,7 +162,6 @@ void CPUInformation::EnumerateLogicalCores(void) {
 void CPUInformation::EnumeratePhysicalCores(void) {
   _PhysicalCoresCount = 0;
   if (_CPUVendor == CPUID_CPUVendor_Intel) {
-
     __cpuidex(_REGS, CPUID_Function_Processor_Topology, 0);
     FeelInternalRegs();
     _PhysicalCoresCount = _LogicalCoresCount / _EBX;
@@ -254,13 +252,15 @@ int CPUInformation::GetCachePhysicalLineSizePartitions(int Level) {
 }
 
 int CPUInformation::GetCacheNumberAPIC(int Level) {
+  int Value = 0;
   if (_CPUVendor == CPUID_CPUVendor_Intel) {
-    return ((_RawCachesInfo[Level]._EAX >> 26) & 0x1F) + 1;
+    Value = ((_RawCachesInfo[Level]._EAX >> 26) & 0x1F) + 1;
   }
 
   if (_CPUVendor == CPUID_CPUVendor_AMD) {
-    return 1;
+    Value = 1;
   }
+  return Value;
 }
 
 int CPUInformation::GetCacheNumberThredsPerCache(int Level) {
