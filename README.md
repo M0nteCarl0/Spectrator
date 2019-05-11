@@ -1,10 +1,10 @@
 # Spectrator
 
 ![AppVeyor CI](https://ci.appveyor.com/api/projects/status/github/M0nteCarl0/Spectrator)
-[![contributors: count](https://img.shields.io/badge/contributors-welcome-brightgreen.svg?style=social)](https://github.com/M0nteCarl0/Spectrator)
+[![contributors: count](https://img.shields.io/badge/contributors-welcome-brightgreen.svg?style=flat-square)](https://github.com/M0nteCarl0/Spectrator)
 
-![GitHub forks](https://img.shields.io/github/forks/M0nteCarl0/Spectrator.svg?label=Fork&style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/M0nteCarl0/Spectrator.svg?label=watch&style=social)
+![GitHub forks](https://img.shields.io/github/forks/M0nteCarl0/Spectrator.svg?label=Fork&style=flat-square)
+![GitHub watchers](https://img.shields.io/github/watchers/M0nteCarl0/Spectrator.svg?label=watch&style=flat-square)
 
 
 **MSR information Intel Core i5 2310**
