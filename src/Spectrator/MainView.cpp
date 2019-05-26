@@ -53,6 +53,10 @@ MainView::MainView(void) {
     SMEP_checkBox->Enabled = false;
   }
 
+  MD_CLEAR_checkBox->Checked =
+      _CPUInformation->GetProcessorFeatureFlagsExtendedExEDX(
+          ProcessorFeatureFlagsExtendedExEDX_MD_CLEAR);
+
   if (!SMAP_support_checkBox->Checked) {
     SMAP_checkBox->Enabled = false;
   }
@@ -79,6 +83,10 @@ MainView::MainView(void) {
     SSB_NO_checkBox->Checked =
         _SpeculationControl->GetSpeculationCapabylitiesAvallibility(
             IA32_ARCH_CAPABILITIES_MSR_FLAG_SSB_NO);
+    MDS_NO_checkBox->Checked =
+        _SpeculationControl->GetSpeculationCapabylitiesAvallibility(
+            IA32_ARCH_CAPABILITIES_MSR_FLAG_MDS_NO);
+
   } else {
     IA32_ARCH_CAPABILITIES_groupBox->Enabled = false;
   }
@@ -251,6 +259,8 @@ void MainView::InitializeComponent(void) {
   this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
   this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
   this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
+  this->MD_CLEAR_checkBox = (gcnew System::Windows::Forms::CheckBox());
+  this->MDS_NO_checkBox = (gcnew System::Windows::Forms::CheckBox());
   this->statusStrip1->SuspendLayout();
   this->groupBox1->SuspendLayout();
   this->groupBox2->SuspendLayout();
@@ -413,8 +423,8 @@ void MainView::InitializeComponent(void) {
       System::Drawing::Size(503, 17);
   this->BTIDisabledByNoHardwareSupport_checkBox->TabIndex = 5;
   this->BTIDisabledByNoHardwareSupport_checkBox->Text =
-      L"Windows OS support for branch target injection mitigation is "
-      L"disabled by absence "
+      L"Windows OS support for branch target injection mitigation is disabled "
+      L"by absence "
       L"of hardware support";
   this->BTIDisabledByNoHardwareSupport_checkBox->UseVisualStyleBackColor = true;
   //
@@ -430,8 +440,8 @@ void MainView::InitializeComponent(void) {
       System::Drawing::Size(427, 17);
   this->BTIDisabledBySystemPolicy_checkBox->TabIndex = 4;
   this->BTIDisabledBySystemPolicy_checkBox->Text =
-      L"Windows OS support for branch target injection mitigation is "
-      L"disabled by system p"
+      L"Windows OS support for branch target injection mitigation is disabled "
+      L"by system p"
       L"olicy";
   this->BTIDisabledBySystemPolicy_checkBox->UseVisualStyleBackColor = true;
   //
@@ -768,6 +778,7 @@ void MainView::InitializeComponent(void) {
   //
   // IA32_ARCH_CAPABILITIES_groupBox
   //
+  this->IA32_ARCH_CAPABILITIES_groupBox->Controls->Add(this->MDS_NO_checkBox);
   this->IA32_ARCH_CAPABILITIES_groupBox->Controls->Add(this->SSB_NO_checkBox);
   this->IA32_ARCH_CAPABILITIES_groupBox->Controls->Add(
       this->SKIP_L1DFL_VMENTRY_checkBox);
@@ -840,6 +851,7 @@ void MainView::InitializeComponent(void) {
   //
   // groupBox7
   //
+  this->groupBox7->Controls->Add(this->MD_CLEAR_checkBox);
   this->groupBox7->Controls->Add(this->PCID_support_checkBox);
   this->groupBox7->Controls->Add(this->INVPCID_support_checkBox);
   this->groupBox7->Controls->Add(this->SMEP_support_checkBox);
@@ -1024,6 +1036,28 @@ void MainView::InitializeComponent(void) {
   this->tabPage5->TabIndex = 4;
   this->tabPage5->Text = L"Branch Target Injection";
   this->tabPage5->UseVisualStyleBackColor = true;
+  //
+  // MD_CLEAR_checkBox
+  //
+  this->MD_CLEAR_checkBox->AutoCheck = false;
+  this->MD_CLEAR_checkBox->AutoSize = true;
+  this->MD_CLEAR_checkBox->Location = System::Drawing::Point(211, 117);
+  this->MD_CLEAR_checkBox->Name = L"MD_CLEAR_checkBox";
+  this->MD_CLEAR_checkBox->Size = System::Drawing::Size(125, 17);
+  this->MD_CLEAR_checkBox->TabIndex = 10;
+  this->MD_CLEAR_checkBox->Text = L"MD_CLEAR  support";
+  this->MD_CLEAR_checkBox->UseVisualStyleBackColor = true;
+  //
+  // MDS_NO_checkBox
+  //
+  this->MDS_NO_checkBox->AutoCheck = false;
+  this->MDS_NO_checkBox->AutoSize = true;
+  this->MDS_NO_checkBox->Location = System::Drawing::Point(6, 132);
+  this->MDS_NO_checkBox->Name = L"MDS_NO_checkBox";
+  this->MDS_NO_checkBox->Size = System::Drawing::Size(72, 17);
+  this->MDS_NO_checkBox->TabIndex = 7;
+  this->MDS_NO_checkBox->Text = L"MDS_NO";
+  this->MDS_NO_checkBox->UseVisualStyleBackColor = true;
   //
   // MainView
   //

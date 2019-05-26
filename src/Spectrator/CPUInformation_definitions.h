@@ -84,6 +84,7 @@ enum ProcessorFeatureFlagsExtendedEx {
 };
 
 enum ProcessorFeatureFlagsExtendedExEDX {
+  ProcessorFeatureFlagsExtendedExEDX_MD_CLEAR = 10,
   ProcessorFeatureFlagsExtendedExEDX_IBRS_IBPB = 26,
   ProcessorFeatureFlagsExtendedExEDX_STIBP = 27,
   ProcessorFeatureFlagsExtendedExEDX_L1D_FLUSH = 28,
