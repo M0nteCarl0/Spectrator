@@ -84,10 +84,9 @@ protected:
   System::Windows::Forms::CheckBox ^ IBPB_checkBox;
   System::Windows::Forms::CheckBox ^ L1D_FLUSH_checkBox;
   System::Windows::Forms::Button ^ WriteSpeculationControl;
-protected: System::Windows::Forms::CheckBox^  MD_CLEAR_checkBox;
-protected: System::Windows::Forms::CheckBox^  MDS_NO_checkBox;
-
-					 System::ComponentModel::Container ^ components;
+  System::Windows::Forms::CheckBox^  MD_CLEAR_checkBox;
+  System::Windows::Forms::CheckBox^  MDS_NO_checkBox;
+  System::ComponentModel::Container ^ components;
 
   void InitializeComponent(void);
   System::Void WriteSpeculationControl_Click(System::Object ^ sender,
